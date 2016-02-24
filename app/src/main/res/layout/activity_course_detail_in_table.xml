@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#ffffff">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="333dp"
+            android:layout_height="223dp"
+            android:weightSum="1"
+            android:layout_gravity="center">
+
+            <TableLayout
+                android:id="@+id/table4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:stretchColumns="*"
+                android:padding="2dip">
+
+                <TableRow android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+
+                    <ImageView
+                        android:layout_width="1dip"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/ImaView2"
+                        android:src="@drawable/ic_school_black"
+                        android:layout_gravity="center|bottom"
+                        android:layout_centerVertical="true"
+
+                         />
+
+                    <TextView
+                        android:layout_width="1dip"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/textViewTeacherDep"
+                        android:layout_gravity="bottom|left"
+                        android:layout_centerVertical="true"
+                         />
+
+                </TableRow>
+                <TableRow android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="1dip"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+
+                            android:id="@+id/ImageView4"
+                            android:layout_gravity="center|center_vertical"
+                            android:src="@drawable/ic_room_black"
+                           />
+
+                        <TextView
+                            android:layout_width="1dip"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Medium Text"
+                            android:id="@+id/textViewTeacherRoom"
+                            android:layout_gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/textView4"
+                            android:layout_toEndOf="@+id/textView4" />
+
+
+                </TableRow>
+                <TableRow android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+
+                            android:id="@+id/ImageView5"
+                            android:layout_gravity="center|top"
+                           android:src="@drawable/ic_subject_black"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Medium Text"
+                            android:id="@+id/tvNbOfOHs"
+
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/textView5"
+                            android:layout_toEndOf="@+id/textView5" />
+
+
+
+                </TableRow>
+            </TableLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    <RelativeLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:context="com.example.yangf.table.MainActivity">
+
+        <TextView android:id="@+id/test_empty"
+            android:text="@string/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/course_text_view_bg"  />
+        <TextView android:id="@+id/test_monday_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mon"
+            android:layout_toRightOf="@id/test_empty"
+            android:background="@drawable/course_text_view_bg"
+            />
+        <TextView android:id="@+id/test_tuesday_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tue"
+            android:layout_toRightOf="@id/test_monday_course"
+            android:background="@drawable/course_text_view_bg"
+            />
+        <TextView android:id="@+id/test_wednesday_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wed"
+            android:layout_toRightOf="@id/test_tuesday_course"
+            android:background="@drawable/course_text_view_bg"
+            />
+        <TextView android:id="@+id/test_thursday_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thu"
+            android:layout_toRightOf="@id/test_wednesday_course"
+            android:background="@drawable/course_text_view_bg"
+            />
+        <TextView android:id="@+id/test_friday_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fri"
+            android:layout_toRightOf="@id/test_thursday_course"
+            android:background="@drawable/course_table_last_colum"
+            />
+
+        <ScrollView
+            android:id="@+id/scroll_body"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/test_empty"
+            android:scrollbars="none"
+            >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/test_course_rl"
+                >
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+

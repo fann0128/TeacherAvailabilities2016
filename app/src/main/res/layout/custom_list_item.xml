@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="2dp"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/tv_Dep"
+                android:layout_width="86dp"
+                android:layout_height="26dp"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:textColor="#673AA1"
+                android:text="DepName"
+                android:singleLine="true"
+                android:layout_weight="0.16"
+                android:layout_marginLeft="15dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_prgs"
+            android:layout_width="247dp"
+            android:layout_height="27dp"
+            android:textSize="12sp"
+            android:textColor="#1151B5"
+            android:gravity="center_vertical"
+            android:text="Programs"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="245dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="#3F51B5"
+            android:gravity="center_vertical"
+            android:text="Teacher's Name"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageButton"
+            android:background="#13ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageButton2"
+            android:background="#20ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/imageButton"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

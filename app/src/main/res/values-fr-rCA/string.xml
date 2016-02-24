@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Disponibilité enseignant</string>
+    <string name="mon">Lun</string>
+    <string name="tue">Mar</string>
+    <string name="wed">Mer</string>
+    <string name="thu">Jeu</string>
+    <string name="fri">Ven</string>
+    <string name="empty"></string>
+    <string name="program">Programme :</string>
+    <string name="department">Département :</string>
+    <string name="teacherName">Nom :</string>
+    <string name="addFav">Ajout aux favoris, réactualisation.</string>
+    <string name="removeFav">Retrait de favori, réactualisation.</string>
+    <string name="searchHint">Nom/Département</string>
+    <string name="tab1_title">Enseignants</string>
+    <string name="tab2_title">Favoris</string>
+    <string name="tab3_title">Chercher</string>
+</resources>
